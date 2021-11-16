@@ -17,7 +17,7 @@ const getPiece = (weightedWords: WeightedWord[]): string => {
     }
   });
 
-  return _.sample(plumpedArray);
+  return _.sample(plumpedArray) || "";
 };
 
 export const getDecl = () => {
